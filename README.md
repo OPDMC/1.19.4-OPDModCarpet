@@ -21,7 +21,7 @@ Version numbers are represented as `vA.B` (e.g., `v1.0`, `v1.1`, `v2.0`), where 
 ## 2 Usage
 
 ```shell
-docker pull quay.io/opdmc/1.19.4-opdmc:latest
+docker pull quay.io/opdmc/1.19.4-opdmc:v1.0
 ```
 
 ```shell
@@ -29,7 +29,7 @@ docker run -d \
   --name=1.19.4-opdmc \
   -p 127.0.0.1:80:25565/tcp \
   -v /path/to/store/data:/minecraft \
-  quay.io/opdmc/1.19.4-opdmc:latest
+  quay.io/opdmc/1.19.4-opdmc:v1.0
 ```
 
 | Parameter                                       | Function                        |
