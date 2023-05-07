@@ -1,4 +1,4 @@
-if [ ! -f /minecraft/server.properties ]; then
+if [ ! -f /minecraft/start.sh ]; then
   mkdir /minecraft
   mv /docker_init/* /minecraft/
   sh /minecraft/start.sh
