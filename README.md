@@ -1,10 +1,11 @@
 <div align="center">
 	<img src="https://github.com/OPDMC/1.19.4-OPDMC/raw/main/%23README/icon_320.png" width="20%"/>
-    <h1>1.19.2-MarioKart <code>v1.0</code></h1>
+    <h1>1.19.4-OPDMC <code>v1.1</code></h1>
 	<a href='https://github.com/OPDMC/1.19.4-OPDMC'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
 	<a href='https://quay.io/repository/opdmc/1.19.4-opdmc'><img src="https://img.shields.io/badge/-Quay.io-ee0000?style=flat&amp;logo=RedHat&amp;logoColor=white" referrerpolicy="no-referrer" alt="Quay.io"></a>
     </tr>
 </div>
+
 
 ## 1 Description
 
@@ -21,7 +22,7 @@ Version numbers are represented as `vA.B` (e.g.: `v1.0`, `v1.1`, `v2.0`), where 
 ## 2 Usage
 
 ```shell
-docker pull quay.io/opdmc/1.19.4-opdmc:v1.0
+docker pull opdmc/1.19.4-opdmc
 ```
 
 ```shell
@@ -29,7 +30,7 @@ docker run -d \
   --name=1.19.4-opdmc \
   -p 127.0.0.1:80:25565/tcp \
   -v /path/to/store/data:/minecraft \
-  quay.io/opdmc/1.19.4-opdmc:v1.0
+  opdmc/1.19.4-opdmc
 ```
 
 | Parameter                             | Function                                                        |                                  |
@@ -45,6 +46,9 @@ docker run -d \
   - https://github.com/gnembon/fabric-carpet
 - **Carpet-TIS-Addition**
   - https://github.com/TISUnion/Carpet-TIS-Addition
+- **Servux**
+  - https://github.com/maruohon/servux
+
 
 ## 4 License
 

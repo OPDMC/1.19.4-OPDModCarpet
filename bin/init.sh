@@ -1,5 +1,7 @@
 if [ ! -f /minecraft/start.sh ]; then
-  mkdir /minecraft
+  if [ ! -f /minecraft ]; then
+    mkdir /minecraft
+  fi
   mv /docker_init/* /minecraft/
   sh /minecraft/start.sh
 else
