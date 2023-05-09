@@ -1,4 +1,4 @@
-$repo = '1.19.4-opdmc'
+$repo = 'opdmc/1.19.4-opdmc'
 Write-Host "Tags exist in DockerHub:"
 $tags = (Invoke-WebRequest -Uri "https://hub.docker.com/v2/repositories/$repo/tags/" | ConvertFrom-Json).results.name
 $tags | ForEach-Object { Write-Host $_ }

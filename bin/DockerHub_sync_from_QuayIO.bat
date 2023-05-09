@@ -1,5 +1,5 @@
 @echo off
-set repo=1.19.4-opdmc
+set repo=opdmc/1.19.4-opdmc
 set /p tag=" Tag to sync > "
 docker pull quay.io/%repo%:%tag%
 docker tag quay.io/%repo%:%tag% %repo%:%tag%
