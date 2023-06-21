@@ -1,4 +1,4 @@
-$repo = 'opdmc/1.19.4-opdmc'
+$repo = 'opdmc/1.19.4-opdmodcarpet'
 
 # Get tags from Docker Hub
 Write-Host "Tags exist in DockerHub:"
