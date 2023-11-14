@@ -47,6 +47,9 @@ docker run -d \
   - https://github.com/gnembon/fabric-carpet
 - **Carpet-TIS-Addition**
   - https://github.com/TISUnion/Carpet-TIS-Addition
+- **Fabric-Discord-Integration**
+  - https://github.com/chunkaligned/fabric-discord-integration
+
 - **Servux**
   - https://github.com/maruohon/servux
 
