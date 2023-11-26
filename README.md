@@ -1,6 +1,6 @@
 <div align="center">
 	<img src="https://github.com/OPDMC/1.19.4-OPDModCarpet/raw/main/docs/%23README/icon_320.png" width="20%"/>
-    <h1>1.19.4-OPDModCarpet <code>v1.2</code></h1>
+    <h1>1.19.4-OPDModCarpet <code>v1.3</code></h1>
 	<a href='https://github.com/OPDMC/1.19.4-OPDModCarpet'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
 	<a href='https://quay.io/repository/opdmc/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/-Quay.io-ee0000?style=flat&amp;logo=RedHat&amp;logoColor=white" referrerpolicy="no-referrer" alt="Quay.io">
 	<a href='https://hub.docker.com/r/opdmc/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a></a>
@@ -39,6 +39,16 @@ docker run -d \
 | `-p 127.0.0.1:80:25565/tcp`           | Minecraft server port                                           | MC服务器端口                          |
 | `-v /path/to/store/data:/minecraft`   | To store data in local, auto initialize if `start.sh` NOT exist | 服务器文件映射路径, `start.sh` 存在时将不进行初始化 |
 
+---
+
+**`-v /path/to/store/data:/minecraft` The `bin` directory under contains scripts for other docker services (此路径下的 `bin` 目录包含其他 docker 服务脚本):**
+
+- `docker_server.bat` Quick start MC server (快捷启动 MC 服务器)
+- `docker_overviewer.bat` Compile Overviewer map (编译 Overviewer 地图)
+- `frpc/frpc.bat` `frpc/frpc.toml` Quick start frpc proxy (快捷启动 frpc 代理)
+- `frpc_sakure.bat` Quick start SakuraFrp proxy (快捷启动樱花 SakuraFrp 代理)
+
+
 ## 3 Reference
 
 - **Fabric**
@@ -49,7 +59,6 @@ docker run -d \
   - https://github.com/TISUnion/Carpet-TIS-Addition
 - **Fabric-Discord-Integration**
   - https://github.com/chunkaligned/fabric-discord-integration
-
 - **Servux**
   - https://github.com/maruohon/servux
 
