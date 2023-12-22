@@ -1,4 +1,4 @@
-FROM openjdk:17-bullseye
+FROM openjdk:17-slim-bullseye
 RUN apt-get update && apt-get install -y dos2unix
 ENV EULA=TRUE
 WORKDIR /minecraft
