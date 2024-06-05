@@ -10,6 +10,8 @@
 	<a href='https://github.com/OPDMC/1.19.4-OPDModCarpet/pkgs/container/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/Ghcr.io-v1.3-555555?labelColor=8957E5&style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="Ghcr.io"></a>
 	<a href='https://hub.docker.com/r/opdmc/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/DockerHub-v1.3-555555?labelColor=1c90ed&style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
 	<a href='https://quay.io/repository/opdmc/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/Quay.io-v1.2-555555?labelColor=ee0000&style=flat&amp;logo=RedHat&amp;logoColor=white" referrerpolicy="no-referrer" alt="Quay.io"></a>
+	
+![Docker Image Size](https://img.shields.io/docker/image-size/opdmc/1.19.4-opdmodcarpet?arch=amd64&label=AMD64&color=006688) ![Docker Image Size](https://img.shields.io/docker/image-size/opdmc/1.19.4-opdmodcarpet?arch=arm64&label=ARM64&color=008866)
     </tr>
 </div>
 
