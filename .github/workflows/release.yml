@@ -186,10 +186,14 @@ jobs:
           git config --global user.name 'version-updater[bot]'
           git config --global user.email 'github-actions@github.com'
 
-      - name: Commit changes
+      - name: Commit changes if any
         run: |
           git add .
-          git commit -m "Update version from ${{ env.PREV_TAG }} to ${{ env.CURR_TAG }}"
+          if git diff-index --quiet HEAD --; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update version from ${{ env.PREV_TAG }} to ${{ env.CURR_TAG }}"
+          fi
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
