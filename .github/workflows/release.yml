@@ -103,7 +103,7 @@ jobs:
           REPO_NAME_LOWER=$(echo $REPO_NAME | tr '[:upper:]' '[:lower:]')
           RELEASE_TAG=$(echo ${{ github.ref }} | sed 's/refs\/tags\///')
           RELEASE_TAG_LOWER=$(echo $RELEASE_TAG | tr '[:upper:]' '[:lower:]')
-          TEMP_DIR="client_${REPO_NAME_LOWER}_${RELEASE_TAG_LOWER}"
+          TEMP_DIR="client-version-pkg_${REPO_NAME_LOWER}_${RELEASE_TAG_LOWER}"
           echo "::set-output name=repo_name::$REPO_NAME"
           echo "::set-output name=repo_name_lower::$REPO_NAME_LOWER"
           echo "::set-output name=release_tag::$RELEASE_TAG"
