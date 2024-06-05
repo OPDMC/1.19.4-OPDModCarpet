@@ -112,10 +112,10 @@
   },
   "assetIndex": {
     "id": "3",
-    "sha1": "01a7b1c7940d61f46a1cfbbca0684a7e86affa58",
-    "size": 410193,
-    "totalSize": 560721802,
-    "url": "https://piston-meta.mojang.com/v1/packages/01a7b1c7940d61f46a1cfbbca0684a7e86affa58/3.json"
+    "sha1": "bf3feae9e42ced10c69da840c4cefdc767d01295",
+    "size": 410292,
+    "totalSize": 568048580,
+    "url": "https://piston-meta.mojang.com/v1/packages/bf3feae9e42ced10c69da840c4cefdc767d01295/3.json"
   },
   "assets": "3",
   "complianceLevel": 1,
@@ -1537,6 +1537,5 @@
   "releaseTime": "2023-03-14T20:56:18+08:00",
   "time": "2023-03-14T20:56:18+08:00",
   "type": "release",
-  "clientVersion": "1.19.4",
-  "minecraftArguments": ""
+  "clientVersion": "1.19.4"
 }
