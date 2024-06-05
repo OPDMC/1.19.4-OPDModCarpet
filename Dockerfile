@@ -4,6 +4,6 @@ ENV EULA=TRUE
 WORKDIR /minecraft
 COPY ./minecraft_server /docker_init
 COPY docker-init.sh ../init.sh
-RUN dos2unix ../docker-init.sh && chmod +x ../docker-init.sh
+RUN dos2unix ../init.sh && chmod +x ../init.sh
 EXPOSE 25565
 ENTRYPOINT [ "sh", "../init.sh" ]
