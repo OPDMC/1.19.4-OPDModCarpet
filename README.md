@@ -7,8 +7,9 @@
 	<img src="https://github.com/OPDMC/1.19.4-OPDModCarpet/raw/main/docs/%23README/icon_320.png" width="20%"/>
     <h1>1.19.4-OPDModCarpet <code>v1.3</code></h1>
 	<a href='https://github.com/OPDMC/1.19.4-OPDModCarpet'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
-	<a href='https://quay.io/repository/opdmc/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/-Quay.io-ee0000?style=flat&amp;logo=RedHat&amp;logoColor=white" referrerpolicy="no-referrer" alt="Quay.io"></a>
-	<a href='https://hub.docker.com/r/opdmc/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
+	<a href='https://github.com/OPDMC/1.19.4-OPDModCarpet/pkgs/container/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/Ghcr.io-v1.3-555555?labelColor=8957E5&style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="Ghcr.io"></a>
+	<a href='https://hub.docker.com/r/opdmc/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/DockerHub-v1.3-555555?labelColor=1c90ed&style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
+	<a href='https://quay.io/repository/opdmc/1.19.4-opdmodcarpet'><img src="https://img.shields.io/badge/Quay.io-v1.2-555555?labelColor=ee0000&style=flat&amp;logo=RedHat&amp;logoColor=white" referrerpolicy="no-referrer" alt="Quay.io"></a>
     </tr>
 </div>
 
@@ -28,7 +29,12 @@ Version numbers are represented as `vA.B` (eg: `v1.0`, `v1.1`, `v2.0`), where ch
 ## 2 Usage
 
 ```shell
-docker pull opdmc/1.19.4-opdmodcarpet
+# DockerHub
+docker pull opdmc/1.19.4-opdmodcarpet:latest
+# Ghcr.io
+docker pull ghcr.io/opdmc/1.19.4-opdmodcarpet:latest
+# Quay.io (Deprecated)
+docker pull quay.io/opdmc/1.19.4-opdmodcarpet:v1.2
 ```
 
 ```shell
