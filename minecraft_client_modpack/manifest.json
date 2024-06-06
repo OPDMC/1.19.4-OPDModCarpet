@@ -1,0 +1,39 @@
+{
+  "minecraft": {
+    "version": "1.19.4",
+    "modLoaders": [
+      {
+        "id": "fabric-0.14.21",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "1.19.4-OPDModCarpet",
+  "version": "",
+  "author": "",
+  "files": [
+    {
+      "projectID": 397510,
+      "fileID": 4441719,
+      "required": true
+    },
+    {
+      "projectID": 306612,
+      "fileID": 4622860,
+      "required": true
+    },
+    {
+      "projectID": 349239,
+      "fileID": 4437137,
+      "required": true
+    },
+    {
+      "projectID": 406323,
+      "fileID": 3879398,
+      "required": true
+    }
+  ],
+  "overrides": "overrides"
+}

@@ -103,31 +103,55 @@ jobs:
           REPO_NAME_LOWER=$(echo $REPO_NAME | tr '[:upper:]' '[:lower:]')
           RELEASE_TAG=$(echo ${{ github.ref }} | sed 's/refs\/tags\///')
           RELEASE_TAG_LOWER=$(echo $RELEASE_TAG | tr '[:upper:]' '[:lower:]')
-          TEMP_DIR="client-version-pkg_${REPO_NAME_LOWER}_${RELEASE_TAG_LOWER}"
+          TEMP_DIR="client-versionpack_${REPO_NAME_LOWER}_${RELEASE_TAG_LOWER}"
+          TEMP_MOD_DIR="client-modpack_${REPO_NAME_LOWER}_${RELEASE_TAG_LOWER}"
           echo "::set-output name=repo_name::$REPO_NAME"
           echo "::set-output name=repo_name_lower::$REPO_NAME_LOWER"
           echo "::set-output name=release_tag::$RELEASE_TAG"
           echo "::set-output name=release_tag_lower::$RELEASE_TAG_LOWER"
           echo "::set-output name=temp_dir::$TEMP_DIR"
+          echo "::set-output name=temp_mod_dir::$TEMP_MOD_DIR"
 
-      - name: Create temporary directory
+      - name: Create temporary directory for version package
         run: mkdir ${{ steps.vars.outputs.temp_dir }}
 
-      - name: Copy minecraft_client to temporary directory
-        run: cp -r minecraft_client ${{ steps.vars.outputs.temp_dir }}/${{ steps.vars.outputs.repo_name }}
+      - name: Copy minecraft_client_versionpack to temporary directory
+        run: cp -r minecraft_client_versionpack ${{ steps.vars.outputs.temp_dir }}/${{ steps.vars.outputs.repo_name }}
 
-      - name: Zip the directory
+      - name: Zip the directory for version package
         run: |
           cd ${{ steps.vars.outputs.temp_dir }}
           zip -r ../${{ steps.vars.outputs.temp_dir }}.zip .
           cd ..
 
-      - name: Upload zip to release
+      - name: Upload version package zip to release
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
           asset_path: ${{ steps.vars.outputs.temp_dir }}.zip
           asset_name: ${{ steps.vars.outputs.temp_dir }}.zip
+          asset_content_type: application/zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Create temporary directory for modpack
+        run: mkdir ${{ steps.vars.outputs.temp_mod_dir }}
+
+      - name: Copy minecraft_client_modpack to temporary directory for modpack
+        run: cp -r minecraft_client_modpack/* ${{ steps.vars.outputs.temp_mod_dir }}
+
+      - name: Zip the directory for modpack
+        run: |
+          cd ${{ steps.vars.outputs.temp_mod_dir }}
+          zip -r ../${{ steps.vars.outputs.temp_mod_dir }}.zip .
+          cd ..
+
+      - name: Upload modpack zip to release
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ${{ steps.vars.outputs.temp_mod_dir }}.zip
+          asset_name: ${{ steps.vars.outputs.temp_mod_dir }}.zip
           asset_content_type: application/zip
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

@@ -141,7 +141,7 @@
       "url": "https://piston-data.mojang.com/v1/objects/73c8bb982e420b33aad9632b482608c5c33e2d13/server.txt"
     }
   },
-  "id": "1.19.4-Fabric 0.14.21",
+  "id": "1.19.4-OPDModCarpet",
   "javaVersion": {
     "component": "java-runtime-gamma",
     "majorVersion": 17
