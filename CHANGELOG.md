@@ -23,6 +23,7 @@
 
 - Upgraded Fabric Version of Client Package
 - Provided ARM64 Architecture Docker Images
+- Provided Curseforge Modpack for Client
 
 ### Usage
 
